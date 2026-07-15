@@ -67,11 +67,11 @@ export function LeafletMapView({
         }).addTo(map);
 
         // Glow effect via custom pane trick using SVG filter (simple approach)
-        marker.on("mouseover", function () {
-          this.setStyle({ radius: 14 });
+        marker.on("mouseover", () => {
+          marker.setStyle({ radius: 14 });
         });
-        marker.on("mouseout", function () {
-          this.setStyle({ radius: 11 });
+        marker.on("mouseout", () => {
+          marker.setStyle({ radius: 11 });
         });
         marker.on("click", () => {
           onSelectZone(zone);
@@ -132,8 +132,12 @@ export function LeafletMapView({
           fillOpacity: 0.9,
         }).addTo(map);
 
-        marker.on("mouseover", function () { this.setStyle({ radius: 14 }); });
-        marker.on("mouseout", function () { this.setStyle({ radius: 11 }); });
+        marker.on("mouseover", () => {
+          marker.setStyle({ radius: 14 });
+        });
+        marker.on("mouseout", () => {
+          marker.setStyle({ radius: 11 });
+        });
         marker.on("click", () => {
           onSelectZone(zone);
           if (popupRef.current) popupRef.current.remove();
