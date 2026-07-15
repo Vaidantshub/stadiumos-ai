@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 160 30% 8%;
+    --card: 0 0% 100%;
+    --card-foreground: 160 30% 8%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 160 30% 8%;
+    --primary: 160 84% 39%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 40 96% 55%;
+    --secondary-foreground: 24 40% 12%;
+    --muted: 160 20% 95%;
+    --muted-foreground: 160 10% 40%;
+    --accent: 160 30% 94%;
+    --accent-foreground: 160 60% 15%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 160 20% 88%;
+    --input: 160 20% 88%;
+    --ring: 160 84% 39%;
+    --radius: 0.85rem;
+  }
+
+  .dark {
+    --background: 160 45% 4%;
+    --foreground: 160 15% 95%;
+    --card: 160 35% 7%;
+    --card-foreground: 160 15% 95%;
+    --popover: 160 35% 6%;
+    --popover-foreground: 160 15% 95%;
+    --primary: 160 84% 45%;
+    --primary-foreground: 160 45% 5%;
+    --secondary: 40 96% 55%;
+    --secondary-foreground: 24 40% 10%;
+    --muted: 160 25% 12%;
+    --muted-foreground: 160 15% 65%;
+    --accent: 160 30% 14%;
+    --accent-foreground: 160 15% 95%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 160 25% 16%;
+    --input: 160 25% 16%;
+    --ring: 160 84% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-card/70 backdrop-blur-xl border border-border/60;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-pitch-500 via-pitch-400 to-goldcup-400;
+  }
+  .shimmer-bg {
+    background: linear-gradient(90deg, hsl(var(--muted)) 0px, hsl(var(--accent)) 40px, hsl(var(--muted)) 80px);
+    background-size: 1000px 100%;
+    @apply animate-[shimmer_2.5s_infinite_linear];
+  }
+  .scrollbar-thin::-webkit-scrollbar { width: 6px; height: 6px; }
+  .scrollbar-thin::-webkit-scrollbar-thumb { @apply bg-border rounded-full; }
+}
+
+/* Accessibility Mode: large text, higher contrast, stronger focus rings */
+.a11y-mode {
+  font-size: 112.5%;
+}
+.a11y-mode * {
+  outline-offset: 3px;
+}
+.a11y-mode :focus-visible {
+  outline: 3px solid hsl(var(--ring));
+}
+.a11y-mode .a11y-hide {
+  display: none !important;
+}
