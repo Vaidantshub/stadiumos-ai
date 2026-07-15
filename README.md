@@ -244,13 +244,6 @@ Deployment steps:
 2. Import project into Vercel
 3. Add environment variables
 4. Deploy 🚀
-
----
-
-# 📸 Screenshots
-
-_Add your project screenshots here_
-
 ---
 
 # 🔮 Future Roadmap
