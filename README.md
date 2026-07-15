@@ -1,160 +1,175 @@
 # 🏟️ StadiumOS AI
 
-> An AI-powered smart stadium operating system that transforms fan experience, crowd intelligence, and stadium operations using Generative AI.
+## AI-Powered Fan Experience & Crowd Intelligence Platform
 
-🌐 **Live Demo:** https://stadiumos-ai-phi.vercel.app/
+> A next-generation AI stadium operating system that improves fan experience, crowd safety, accessibility, and event management using Artificial Intelligence.
 
----
-
-## 🚀 Overview
-
-**StadiumOS AI** is a next-generation AI platform designed for modern sports venues.
-
-It creates an intelligent layer between **fans, organizers, and stadium infrastructure** by combining Generative AI, smart navigation, crowd intelligence, and real-time insights.
-
-The vision is to make stadiums more **intelligent, accessible, safer, and personalized**.
+![Next.js](https://img.shields.io/badge/Next.js-15-black)
+![TypeScript](https://img.shields.io/badge/TypeScript-blue)
+![Firebase](https://img.shields.io/badge/Firebase-orange)
+![Groq AI](https://img.shields.io/badge/Groq-AI-green)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-blue)
+![License](https://img.shields.io/badge/License-MIT-blue)
 
 ---
 
-# 🎯 Problem
+## 🌍 Live Demo
+
+🚀 Website: [stadiumos-ai-phi.vercel.app](https://stadiumos-ai-phi.vercel.app/)
+
+---
+
+# 📖 Overview
+
+**StadiumOS AI** is an intelligent stadium companion platform designed to transform the way fans interact with modern sports venues.
+
+Built for large-scale events like the **FIFA World Cup 2026**, StadiumOS combines:
+
+* Generative AI assistance
+* Smart stadium navigation
+* Crowd intelligence
+* Emergency reporting
+* Multilingual support
+* Organizer analytics
+
+into one unified AI-powered stadium experience.
+
+---
+
+# 🚨 The Problem
 
 Modern stadiums face several challenges:
 
-- Fans struggle with navigation inside large venues
-- Long queues and inefficient crowd movement
-- Limited access to real-time stadium information
-- Poor accessibility support
-- Lack of intelligent operational insights
+* Fans struggle with navigation in huge venues
+* Emergency reporting can be slow
+* Organizers lack real-time crowd visibility
+* International visitors face language barriers
+* Stadium information is scattered across multiple systems
 
 ---
 
-# 💡 Solution
+# 💡 Our Solution
 
-StadiumOS AI provides an intelligent digital experience through:
+StadiumOS AI creates an intelligent layer connecting fans, stadium infrastructure, and organizers.
 
-- 🤖 AI Fan Assistant
-- 📊 Organizer Intelligence Dashboard
-- 🌡️ Crowd Heatmap Analytics
-- 🗺️ Smart Stadium Navigation
-- 🚨 Emergency Assistant
-- 🚌 Transport Recommendations
-- ♿ Accessibility Mode
-- 🌍 Multilingual AI Support
+```
+                Fans
+                  |
+                  ↓
+        AI Stadium Assistant
+                  |
+                  ↓
+        Stadium Intelligence Layer
+                  |
+     ------------------------------
+     |             |              |
+ Navigation   Crowd AI      Emergency
+     |             |              |
+ Maps API     Analytics     Organizer
+```
 
 ---
 
-# ✨ Features
+# ✨ Key Features
 
 ## 🤖 AI Fan Assistant
 
-Powered by **Google Gemini AI**.
+An AI-powered assistant that helps visitors with:
 
-Helps fans with:
+✅ Stadium information
+✅ Match details
+✅ Seat guidance
+✅ Food & beverage recommendations
+✅ Transportation support
+✅ Emergency assistance
+✅ Multilingual conversations
 
-- Stadium information
-- Match details
-- Facility discovery
-- Navigation guidance
-- Personalized recommendations
+---
 
+## 🗺 Smart Stadium Navigation
+
+Helps fans easily explore stadiums:
+
+* Interactive maps
+* Gate navigation
+* Route guidance
+* Facility discovery
+* Walking directions
+
+---
+
+## 👥 Crowd Intelligence
+
+Provides real-time crowd awareness:
+
+* Crowd heatmaps
+* Zone occupancy monitoring
+* Congestion detection
+* High-density alerts
+* Crowd trend analysis
+
+---
+
+## 🚨 Emergency Support
+
+Improves stadium safety:
+
+* Instant incident reporting
+* Emergency categories
+* Organizer notification workflow
+* Faster response management
+
+---
 
 ## 📊 Organizer Dashboard
 
-Provides stadium operators with:
+A command center for stadium operators:
 
-- Crowd insights
-- Zone monitoring
-- AI-generated recommendations
-- Operational analytics
-
-
-## 🌡️ Crowd Intelligence Heatmap
-
-Visualizes:
-
-- Crowd density zones
-- Congestion areas
-- Movement patterns
-- Safety monitoring
-
-
-## 🗺️ Smart Stadium Navigation
-
-Helps visitors locate:
-
-- Seats
-- Gates
-- Food courts
-- Restrooms
-- Parking areas
-- Emergency points
-
-
-## 🚨 Emergency Assistant
-
-AI-powered safety assistant for:
-
-- Incident reporting
-- Emergency guidance
-- Quick response recommendations
-
-
-## 🌍 Multilingual Support
-
-Supports 6 languages:
-
-- English
-- Español
-- Français
-- العربية
-- Português
-- Deutsch
-
-
-## ♿ Accessibility Mode
-
-Improves usability with:
-
-- Better readability
-- Enhanced focus visibility
-- Keyboard-friendly experience
+* Live occupancy metrics
+* AI-generated insights
+* Crowd monitoring
+* Event analytics
+* Operational overview
 
 ---
 
-# 🧱 Tech Stack
+# 🧠 AI Capabilities
 
-| Layer | Technology |
-|---|---|
-| Framework | Next.js 15 (App Router) + TypeScript |
-| Styling | Tailwind CSS + shadcn/ui |
-| Animation | Framer Motion |
-| AI | Google Gemini 2.5 Flash |
-| Maps | Google Maps JavaScript API |
-| Authentication | Firebase Auth |
-| Database | Firebase Firestore |
-| Charts | Recharts |
-| State Management | Zustand |
-| Deployment | Vercel |
+StadiumOS AI uses LLM-powered intelligence for:
+
+* Natural language understanding
+* Context-aware assistance
+* Smart recommendations
+* Multilingual conversations
+* Real-time decision support
 
 ---
 
-# 🧠 AI Architecture
+# 🎬 Demo Flow
 
-```
-                 User
-                  |
-                  |
-          StadiumOS Interface
-                  |
-                  |
-          AI Intelligence Layer
-                  |
-     --------------------------------
-     |              |               |
- Gemini AI    Stadium Data    Crowd Data
-     |
- AI Responses + Smart Recommendations
-```
+1. Fan enters stadium
+2. AI Assistant provides guidance
+3. User receives navigation support
+4. Crowd system monitors stadium zones
+5. Emergency reports reach organizers
+6. Dashboard provides operational insights
+
+---
+
+# 🛠 Tech Stack
+
+| Category          | Technology          |
+| ------------------ | -------------------- |
+| Framework          | Next.js 15            |
+| Language            | TypeScript           |
+| Styling             | Tailwind CSS         |
+| UI                  | shadcn/ui             |
+| AI                  | Groq API               |
+| Maps                | Google Maps API      |
+| Backend             | Next.js API Routes  |
+| Database            | Firebase              |
+| State Management    | Zustand                |
+| Deployment          | Vercel                 |
 
 ---
 
@@ -163,120 +178,125 @@ Improves usability with:
 ```
 src/
 ├── app/
-│   ├── page.tsx
-│   ├── fan/
-│   ├── dashboard/
-│   ├── heatmap/
-│   ├── navigate/
-│   ├── transport/
-│   ├── emergency/
-│   └── api/
-│
 ├── components/
-│   ├── assistant/
-│   ├── dashboard/
-│   ├── heatmap/
-│   ├── navigation/
-│   ├── emergency/
-│   └── shared/
-│
-└── lib/
-    ├── gemini/
-    ├── firebase/
-    ├── i18n/
-    ├── store/
-    └── data/
+├── lib/
+├── api/
+└── styles/
 ```
 
 ---
 
-# ⚡ Getting Started
+# ⚙️ Installation
 
-## Clone Repository
+Clone repository:
 
 ```bash
-git clone https://github.com/yourusername/stadiumos-ai.git
+git clone https://github.com/YOUR_USERNAME/stadiumos-ai.git
 ```
 
-## Install Dependencies
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-## Run Development Server
+Run development server:
 
 ```bash
 npm run dev
 ```
 
-Open:
+Build:
 
-```
-http://localhost:3000
-```
-
----
-
-# 🔐 Environment Variables
-
-Create a `.env.local` file:
-
-```env
-GEMINI_API_KEY=
-
-NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=
-
-NEXT_PUBLIC_FIREBASE_API_KEY=
-NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=
-NEXT_PUBLIC_FIREBASE_PROJECT_ID=
+```bash
+npm run build
 ```
 
 ---
 
-# ☁️ Deployment
+# 🔐 Privacy & Safety
 
-StadiumOS AI is deployed using **Vercel**.
+StadiumOS AI follows a privacy-focused approach:
 
-Deployment steps:
+* Secure Firebase infrastructure
+* No unnecessary personal data collection
+* Privacy-friendly crowd analytics
+* Future-ready anonymous monitoring
 
-1. Push repository to GitHub
-2. Import project into Vercel
-3. Add environment variables
-4. Deploy 🚀
+---
+
+# 🌎 Use Cases
+
+🏆 FIFA World Cup
+🏟 Sports Stadiums
+🎵 Concert Venues
+🎪 Large Public Events
+🏙 Smart Cities
+🎫 Entertainment Facilities
+
 ---
 
 # 🔮 Future Roadmap
 
-- [ ] Real-time IoT stadium integration
-- [ ] AI voice assistant
-- [ ] Computer vision crowd detection
-- [ ] Mobile application
-- [ ] Live ticket integration
-- [ ] Predictive crowd management
-- [ ] Smart stadium automation
+* AI crowd prediction
+* Voice-based stadium assistant
+* Indoor live navigation
+* Offline navigation
+* Smart ticket verification
+* Real-time emergency dispatch
+* Mobile application
+* IoT stadium integration
 
 ---
 
-# 🏆 Vision
+# 📸 Screenshots
 
-StadiumOS AI aims to build the future of intelligent sports venues where technology improves:
+### 🏠 Landing Page
+AI-powered welcome screen highlighting the platform's core value proposition, with quick access to the Assistant and Dashboard.
 
-⚡ Fan Experience  
-🛡️ Stadium Safety  
-📊 Operations Intelligence  
-🌍 Accessibility  
+![Landing Page](./screenshots/landing-page.png)
 
 ---
 
-## 👨‍💻 Developer
+### 🔥 Crowd Heatmap — Stadium Map View
+Live visual heatmap of stadium zones (stands, concourses, parking, food courts) with color-coded occupancy percentages.
 
-Built with ❤️ using:
-
-**Next.js + TypeScript + Generative AI**
+![Crowd Heatmap Map View](./screenshots/crowd-heatmap-map.png)
 
 ---
 
-## 📄 License
+### 📊 Crowd Heatmap — Zone Grid View
+Detailed zone-by-zone breakdown showing occupancy percentage, density status (Low/Moderate/High/Critical), and live headcounts.
 
-This project is licensed under the MIT License.
+![Crowd Heatmap Grid View](./screenshots/crowd-heatmap-grid.png)
+
+---
+
+### 🚨 Emergency Assistant
+AI-guided incident reporting interface covering medical emergencies, security concerns, lost items, lost persons, fire hazards, and overcrowding — with a live feed of recent reports and response status.
+
+![Emergency Assistant](./screenshots/emergency-assistant.png)
+
+---
+
+# 🏆 Hackathon Project
+
+Built for the **FIFA World Cup 2026 Hackathon**.
+
+StadiumOS AI explores how Artificial Intelligence can create safer, smarter, and more connected stadium experiences for millions of fans worldwide.
+
+---
+
+# 👨‍💻 Developer
+
+**Vaidant**
+
+---
+
+# 📄 License
+
+MIT License
+
+---
+
+⭐ If you like this project, consider starring the repository.
