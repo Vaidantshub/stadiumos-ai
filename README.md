@@ -1,150 +1,289 @@
-# 🏆 StadiumOS AI — FIFA World Cup 2026
+# 🏟️ StadiumOS AI
 
-An AI-powered fan experience & crowd-intelligence platform built for the FIFA World Cup 2026 Hackathon.
+> An AI-powered smart stadium operating system that transforms fan experience, crowd intelligence, and stadium operations using Generative AI.
 
-**Live features:** AI Fan Assistant · Organizer Dashboard · Crowd Heatmap · Stadium Navigation ·
-Emergency Assistant · Transport Recommendations · Accessibility Mode · Multilingual Support (6 languages)
+🌐 **Live Demo:** https://stadiumos-ai-phi.vercel.app/
 
 ---
 
-## 🧱 Tech Stack
+## 🚀 Overview
+
+**StadiumOS AI** is a next-generation AI platform designed for modern sports venues.
+
+It creates an intelligent layer between **fans, organizers, and stadium infrastructure** by combining Generative AI, smart navigation, crowd intelligence, and real-time insights.
+
+The vision is to make stadiums more **intelligent, accessible, safer, and personalized**.
+
+---
+
+# 🎯 Problem
+
+Modern stadiums face several challenges:
+
+- Fans struggle with navigation inside large venues
+- Long queues and inefficient crowd movement
+- Limited access to real-time stadium information
+- Poor accessibility support
+- Lack of intelligent operational insights
+
+---
+
+# 💡 Solution
+
+StadiumOS AI provides an intelligent digital experience through:
+
+- 🤖 AI Fan Assistant
+- 📊 Organizer Intelligence Dashboard
+- 🌡️ Crowd Heatmap Analytics
+- 🗺️ Smart Stadium Navigation
+- 🚨 Emergency Assistant
+- 🚌 Transport Recommendations
+- ♿ Accessibility Mode
+- 🌍 Multilingual AI Support
+
+---
+
+# ✨ Features
+
+## 🤖 AI Fan Assistant
+
+Powered by **Google Gemini AI**.
+
+Helps fans with:
+
+- Stadium information
+- Match details
+- Facility discovery
+- Navigation guidance
+- Personalized recommendations
+
+
+## 📊 Organizer Dashboard
+
+Provides stadium operators with:
+
+- Crowd insights
+- Zone monitoring
+- AI-generated recommendations
+- Operational analytics
+
+
+## 🌡️ Crowd Intelligence Heatmap
+
+Visualizes:
+
+- Crowd density zones
+- Congestion areas
+- Movement patterns
+- Safety monitoring
+
+
+## 🗺️ Smart Stadium Navigation
+
+Helps visitors locate:
+
+- Seats
+- Gates
+- Food courts
+- Restrooms
+- Parking areas
+- Emergency points
+
+
+## 🚨 Emergency Assistant
+
+AI-powered safety assistant for:
+
+- Incident reporting
+- Emergency guidance
+- Quick response recommendations
+
+
+## 🌍 Multilingual Support
+
+Supports 6 languages:
+
+- English
+- Español
+- Français
+- العربية
+- Português
+- Deutsch
+
+
+## ♿ Accessibility Mode
+
+Improves usability with:
+
+- Better readability
+- Enhanced focus visibility
+- Keyboard-friendly experience
+
+---
+
+# 🧱 Tech Stack
 
 | Layer | Technology |
 |---|---|
 | Framework | Next.js 15 (App Router) + TypeScript |
-| Styling | Tailwind CSS + shadcn/ui + Framer Motion |
-| AI | Google Gemini 2.5 Flash (`@google/generative-ai`) |
-| Maps | Google Maps JavaScript API (`@react-google-maps/api`) |
-| Auth & DB | Firebase Auth + Firestore |
+| Styling | Tailwind CSS + shadcn/ui |
+| Animation | Framer Motion |
+| AI | Google Gemini 2.5 Flash |
+| Maps | Google Maps JavaScript API |
+| Authentication | Firebase Auth |
+| Database | Firebase Firestore |
 | Charts | Recharts |
-| State | Zustand (persisted) |
+| State Management | Zustand |
+| Deployment | Vercel |
 
 ---
 
-## 📂 Project Structure
+# 🧠 AI Architecture
+
+```
+                 User
+                  |
+                  |
+          StadiumOS Interface
+                  |
+                  |
+          AI Intelligence Layer
+                  |
+     --------------------------------
+     |              |               |
+ Gemini AI    Stadium Data    Crowd Data
+     |
+ AI Responses + Smart Recommendations
+```
+
+---
+
+# 📂 Project Structure
 
 ```
 src/
 ├── app/
-│   ├── page.tsx              # Landing page
-│   ├── fan/                  # AI Fan Assistant
-│   ├── dashboard/             # Organizer Dashboard
-│   ├── heatmap/               # Crowd Heatmap
-│   ├── navigate/               # Stadium Navigation (Google Maps)
-│   ├── transport/              # Transport Recommendations
-│   ├── emergency/              # Emergency Assistant
+│   ├── page.tsx
+│   ├── fan/
+│   ├── dashboard/
+│   ├── heatmap/
+│   ├── navigate/
+│   ├── transport/
+│   ├── emergency/
 │   └── api/
-│       ├── assistant/route.ts        # Gemini: Fan Assistant
-│       ├── emergency/route.ts        # Gemini: Emergency guidance
-│       └── organizer-insight/route.ts # Gemini: Organizer AI insights
+│
 ├── components/
-│   ├── ui/          # shadcn/ui primitives (button, card, dialog, select...)
-│   ├── layout/       # Navbar, Footer, Providers
-│   ├── assistant/     # Chat UI
-│   ├── dashboard/      # Charts, stat cards, alerts feed
-│   ├── heatmap/         # Zone cards, schematic stadium map
-│   ├── navigation/       # Google Maps view, route finder
-│   ├── transport/         # Transport option cards
-│   ├── emergency/          # Emergency report form
-│   └── shared/               # Reusable section/feature components
+│   ├── assistant/
+│   ├── dashboard/
+│   ├── heatmap/
+│   ├── navigation/
+│   ├── emergency/
+│   └── shared/
+│
 └── lib/
-    ├── types/          # Shared TypeScript domain types
-    ├── data/            # Mock FIFA 2026 stadium/match/transport data
-    ├── gemini/           # Gemini client + system prompts
-    ├── firebase/          # Firebase config + auth helpers
-    ├── i18n/                # Translation dictionary (6 languages)
-    └── store/                 # Zustand global app store
+    ├── gemini/
+    ├── firebase/
+    ├── i18n/
+    ├── store/
+    └── data/
 ```
 
 ---
 
-## 🚀 Getting Started
+# ⚡ Getting Started
 
-### 1. Install dependencies
+## Clone Repository
+
+```bash
+git clone https://github.com/yourusername/stadiumos-ai.git
+```
+
+## Install Dependencies
+
 ```bash
 npm install
 ```
 
-### 2. Configure environment variables
-Copy `.env.example` to `.env.local` and fill in your keys:
+## Run Development Server
 
-```bash
-cp .env.example .env.local
-```
-
-| Variable | Where to get it |
-|---|---|
-| `GEMINI_API_KEY` | [Google AI Studio](https://aistudio.google.com/app/apikey) |
-| `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY` | [Google Cloud Console](https://console.cloud.google.com/) → enable "Maps JavaScript API" |
-| `NEXT_PUBLIC_FIREBASE_*` | [Firebase Console](https://console.firebase.google.com/) → Project Settings → General |
-
-> **Note:** The app runs in full **demo mode** without any keys — Gemini API routes return
-> graceful fallback responses, the schematic stadium map still works without Google Maps,
-> and Firebase Auth simply stays signed-out. This makes it deployable and demo-able instantly.
-
-### 3. Run locally
 ```bash
 npm run dev
 ```
-Visit `http://localhost:3000`.
 
-### 4. Build for production
-```bash
-npm run build && npm start
+Open:
+
+```
+http://localhost:3000
 ```
 
 ---
 
-## ☁️ Deploying to Vercel
+# 🔐 Environment Variables
 
-1. Push this repo to GitHub.
-2. Import the repo at [vercel.com/new](https://vercel.com/new).
-3. Add the environment variables from `.env.example` in the Vercel project settings.
-4. Deploy — Vercel auto-detects Next.js. No extra config required.
+Create a `.env.local` file:
 
----
+```env
+GEMINI_API_KEY=
 
-## 🔐 Firebase Setup (optional, for Auth + Firestore)
+NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=
 
-1. Create a Firebase project at [console.firebase.google.com](https://console.firebase.google.com/).
-2. Enable **Authentication** → Sign-in providers: Google + Anonymous.
-3. Enable **Firestore Database** in production mode.
-4. Copy your web app config into `.env.local`.
-
-Suggested Firestore security rules (starter):
-```
-rules_version = '2';
-service cloud.firestore {
-  match /databases/{database}/documents {
-    match /users/{userId} {
-      allow read, write: if request.auth != null && request.auth.uid == userId;
-    }
-  }
-}
+NEXT_PUBLIC_FIREBASE_API_KEY=
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=
 ```
 
 ---
 
-## 🌍 Multilingual Support
+# ☁️ Deployment
 
-Language strings live in `src/lib/i18n/translations.ts`. Supported: English, Español, Français,
-العربية (RTL), Português, Deutsch. Switch languages via the globe icon in the navbar — the choice
-persists across sessions and is passed to Gemini so AI responses match the selected language.
+StadiumOS AI is deployed using **Vercel**.
 
-## ♿ Accessibility Mode
+Deployment steps:
 
-Toggle via the accessibility icon in the navbar. Applies a global `.a11y-mode` class that increases
-base font size and strengthens focus rings for keyboard/screen-reader users.
-
----
-
-## 🏟️ Mock Data
-
-Five FIFA World Cup 2026 host stadiums (MetLife, Estadio Azteca, BC Place, SoFi, AT&T Stadium) with
-12 zones each (seating, concourses, gates, concessions, restrooms, parking), sample matches, transport
-options, and emergency reports live in `src/lib/data/`. Swap these for real APIs/Firestore collections
-as the backend matures.
+1. Push repository to GitHub
+2. Import project into Vercel
+3. Add environment variables
+4. Deploy 🚀
 
 ---
 
-Built with ❤️ for the FIFA World Cup 2026 Hackathon.
+# 📸 Screenshots
+
+_Add your project screenshots here_
+
+---
+
+# 🔮 Future Roadmap
+
+- [ ] Real-time IoT stadium integration
+- [ ] AI voice assistant
+- [ ] Computer vision crowd detection
+- [ ] Mobile application
+- [ ] Live ticket integration
+- [ ] Predictive crowd management
+- [ ] Smart stadium automation
+
+---
+
+# 🏆 Vision
+
+StadiumOS AI aims to build the future of intelligent sports venues where technology improves:
+
+⚡ Fan Experience  
+🛡️ Stadium Safety  
+📊 Operations Intelligence  
+🌍 Accessibility  
+
+---
+
+## 👨‍💻 Developer
+
+Built with ❤️ using:
+
+**Next.js + TypeScript + Generative AI**
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
